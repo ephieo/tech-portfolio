@@ -36,6 +36,10 @@ a:active {
   height: 20rem;
   background: transparent;
 }
+.coming {
+  font-size: 5rem;
+  opacity: 0.5;
+}
 .cv {
   display: flex;
   justify-content: center;
@@ -69,9 +73,18 @@ a:active {
 /* K */
 /* L */
 .logo {
-  width: 7rem;
+  width: 25rem;
   /* margin: 0rem 10rem; */
 }
+.lrglogo {
+  width: 20rem;
+  /* margin: 0rem 10rem; */
+}
+.smllogo {
+  width: 30rem;
+  /* margin: 0rem 10rem; */
+}
+
 .list {
   margin-right: 2rem;
   list-style: none;
@@ -217,7 +230,7 @@ li {
   justify-content: center;
   align-items: center;
 }
-.techstack-inner {
+/* .techstack-inner {
   width: 40vw;
   height: 80vh;
   margin-top: 7rem 0rem 2rem 2rem;
@@ -229,6 +242,24 @@ li {
   align-items: center;
   flex-direction: row;
   flex-wrap: wrap;
+} */
+.slide-container {
+  display: flex;
+  /* justify-content: center;
+  align-items: center; */
+  /* margin: 7rem 0rem 2rem 5rem; */
+  width: 40vw;
+  height: 40vw;
+  overflow: hidden;
+  border: var(--text-color) solid 3px;
+  box-shadow: 7px 10px var(--text-color);
+  border-radius: 20px;
+}
+.slides {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
 }
 .techcontinfo {
   width: 50vw;
@@ -240,7 +271,7 @@ li {
   align-items: center;
 }
 .techinfoheader {
-  font-size: 10rem;
+  font-size: 5rem;
   text-align: center;
 }
 /* U */

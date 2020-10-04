@@ -1,4 +1,9 @@
 import React from "react";
+//react slick
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Slider from "react-slick";
+//images
 import css from "./../images/css.png";
 import html from "./../images/html.png";
 import jest from "./../images/jest.png";
@@ -8,29 +13,87 @@ import netlify from "./../images/netlify.png";
 import node from "./../images/node.png";
 import js from "./../images/js.png";
 
-export default function TeachStack(props) {
+// function NextArrow({ className, style, onClick }) {
+//   return (
+//     <div
+//       className={className}
+//       style={{
+//         ...style,
+//         display: "block",
+//         background: "#cdcd66",
+//         color: "#cdcd66",
+//         borderRadius: "20px",
+//       }}
+//       onClick={onClick}
+//     />
+//   );
+// }
+
+// function PrevArrow({ className, style, onClick }) {
+//   return (
+//     <div
+//       className={className}
+//       style={{
+//         ...style,
+//         display: "block",
+//         background: "#cdcd66",
+//         color: "#0d1a27",
+//         borderRadius: "20px",
+//       }}
+//       onClick={onClick}
+//     />
+//   );
+// }
+
+export default function TechStack(props) {
+  const settings = {
+    // dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    // nextArrow: <NextArrow />,
+    // prevArrow: <PrevArrow />,
+    autoplay: true,
+    // speed: 1500,
+    autoplaySpeed: 1500,
+    cssEase: "linear",
+  };
   return (
     <div className="techcont">
-      <section className="techstack-inner">
-        <div className="techstack-inner">
-          <Img src={css} alt="css logo" />
-          <Img src={cypress} alt="cypress logo" />
-          <Img src={html} alt="html logo" />
-          <Img src={heroku} alt="heroku logo" />
-          <Img src={jest} alt="jest logo" />
-          <Img src={js} alt="javascript logo" />
-          <Img src={netlify} alt="netlify logo" />
-          <Img src={node} alt="node.js logo" />
-        </div>
-      </section>
+      <Slider {...settings} className="slide-container">
+        <section className="slides">
+          <Img src={css} alt="css logo" class="lrglogo" />
+        </section>
+        <section className="slides">
+          <Img src={cypress} alt="cypress logo" class="smllogo" />
+        </section>
+        <section className="slides">
+          <Img src={html} alt="html logo" class="lrglogo" />
+        </section>
+        <section className="slides">
+          <Img src={heroku} alt="heroku logo" class="logo" />
+        </section>
+        <section className="slides">
+          <Img src={jest} alt="jest logo" class="logo" />
+        </section>
+        <section className="slides">
+          <Img src={js} alt="javascript logo" class="logo" />
+        </section>
+        <section className="slides">
+          <Img src={netlify} alt="netlify logo" class="logo" />
+        </section>
+        <section className="slides">
+          <Img src={node} alt="node.js logo" class="smllogo" />
+        </section>
+      </Slider>
     </div>
   );
 }
-
 function Img(props) {
   return (
     <>
-      <img src={props.src} alt={props.alt} className="logo" />
+      <img src={props.src} alt={props.alt} className={props.class} />
     </>
   );
 }

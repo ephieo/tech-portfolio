@@ -9,8 +9,8 @@ export default function Navbar(props) {
           <h1 className="name">Ephie Oyedoh</h1>
         </Link>
         <ul className="list">
-          <Link to="/about">
-            <li className="li-item">About</li>
+          <Link to="/resume">
+            <li className="li-item">Resume</li>
           </Link>
           <Link to="/projects">
             <li className="li-item">Projects</li>
