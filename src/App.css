@@ -69,8 +69,8 @@ a:active {
 /* K */
 /* L */
 .logo {
-  width: 21rem;
-  margin: 0rem 10rem;
+  width: 7rem;
+  /* margin: 0rem 10rem; */
 }
 .list {
   margin-right: 2rem;
@@ -208,6 +208,8 @@ li {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 .techstack-outer {
   width: 100%;
@@ -225,6 +227,8 @@ li {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 .techcontinfo {
   width: 50vw;

@@ -12,7 +12,7 @@ export default function TeachStack(props) {
   return (
     <div className="techcont">
       <section className="techstack-inner">
-        <marquee scrollAmount="30">
+        <div className="techstack-inner">
           <Img src={css} alt="css logo" />
           <Img src={cypress} alt="cypress logo" />
           <Img src={html} alt="html logo" />
@@ -21,7 +21,7 @@ export default function TeachStack(props) {
           <Img src={js} alt="javascript logo" />
           <Img src={netlify} alt="netlify logo" />
           <Img src={node} alt="node.js logo" />
-        </marquee>
+        </div>
       </section>
     </div>
   );
