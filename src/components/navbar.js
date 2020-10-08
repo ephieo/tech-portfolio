@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 export default function Navbar(props) {
   return (
-    <div className="nbdiv">
+    <div id="nbdiv">
       <section className="navbar">
         <Link to="/">
           <h1 className="name">Ephie Oyedoh</h1>
