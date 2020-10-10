@@ -13,38 +13,6 @@ import netlify from "./../images/netlify.png";
 import node from "./../images/node.png";
 import js from "./../images/js.png";
 
-// function NextArrow({ className, style, onClick }) {
-//   return (
-//     <div
-//       className={className}
-//       style={{
-//         ...style,
-//         display: "block",
-//         background: "#cdcd66",
-//         color: "#cdcd66",
-//         borderRadius: "20px",
-//       }}
-//       onClick={onClick}
-//     />
-//   );
-// }
-
-// function PrevArrow({ className, style, onClick }) {
-//   return (
-//     <div
-//       className={className}
-//       style={{
-//         ...style,
-//         display: "block",
-//         background: "#cdcd66",
-//         color: "#0d1a27",
-//         borderRadius: "20px",
-//       }}
-//       onClick={onClick}
-//     />
-//   );
-// }
-
 export default function TechStack(props) {
   const settings = {
     // dots: true,
@@ -60,7 +28,7 @@ export default function TechStack(props) {
     cssEase: "linear",
   };
   return (
-    <div className="techcont">
+    <div id={props.class}>
       <Slider {...settings} className="slide-container">
         <section className="slides">
           <Img src={css} alt="css logo" class="lrglogo" />
