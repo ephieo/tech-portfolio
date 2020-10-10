@@ -20,8 +20,6 @@ export function TechStack(props) {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-    // nextArrow: <NextArrow />,
-    // prevArrow: <PrevArrow />,
     autoplay: true,
     // speed: 1500,
     autoplaySpeed: 1300,
