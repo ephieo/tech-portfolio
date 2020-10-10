@@ -13,7 +13,7 @@ import netlify from "./../images/netlify.png";
 import node from "./../images/node.png";
 import js from "./../images/js.png";
 
-export default function TechStack(props) {
+export function TechStack(props) {
   const settings = {
     // dots: true,
     infinite: true,
@@ -24,7 +24,7 @@ export default function TechStack(props) {
     // prevArrow: <PrevArrow />,
     autoplay: true,
     // speed: 1500,
-    autoplaySpeed: 1500,
+    autoplaySpeed: 1300,
     cssEase: "linear",
   };
   return (
@@ -34,10 +34,10 @@ export default function TechStack(props) {
           <Img src={css} alt="css logo" class="lrglogo" />
         </section>
         <section className="slides">
-          <Img src={cypress} alt="cypress logo" class="smllogo" />
+          <Img src={cypress} alt="cypress logo" class="paddinglogo" />
         </section>
         <section className="slides">
-          <Img src={html} alt="html logo" class="lrglogo" />
+          <Img src={html} alt="html logo" class="smllogo" />
         </section>
         <section className="slides">
           <Img src={heroku} alt="heroku logo" class="logo" />
@@ -49,16 +49,16 @@ export default function TechStack(props) {
           <Img src={js} alt="javascript logo" class="logo" />
         </section>
         <section className="slides">
-          <Img src={netlify} alt="netlify logo" class="logo" />
+          <Img src={netlify} alt="netlify logo" class="smllogo" />
         </section>
         <section className="slides">
-          <Img src={node} alt="node.js logo" class="smllogo" />
+          <Img src={node} alt="node.js logo" class="node" />
         </section>
       </Slider>
     </div>
   );
 }
-function Img(props) {
+export function Img(props) {
   return (
     <>
       <img src={props.src} alt={props.alt} className={props.class} />
