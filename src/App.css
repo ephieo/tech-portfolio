@@ -282,23 +282,19 @@ li {
 .techstack-outer {
   width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   flex-direction: row;
-  position: absolute;
-  right: -5vw;
-  bottom: -60vw;
-  /* border: white 3px solid; */
 }
 .slide-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 35vw;
+  width: 40vw;
   height: 35vw;
   overflow: hidden;
-  /* border: var(--text-color) solid 3px; */
-  /* box-shadow: 7px 10px var(--text-color); */
+  border-top: 3px solid var(--text-color);
+  border-bottom: 3px solid var(--text-color);
   border-radius: 20px;
 }
 
@@ -308,43 +304,57 @@ li {
   align-items: center;
   overflow: hidden;
 }
-.techcontinfo {
-  width: 50vw;
-  height: 15vh;
-  /* border: var(--text-color) solid 3px;
-  box-shadow: 1rem 2rem var(--text-color); */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+
 .techinfoheader {
   font-size: 5rem;
   text-align: center;
 }
 /* U */
 /* V */
-video {
-  outline-color: var(--text-color);
-  outline-style: inset;
-  padding: 1rem;
-}
-
 /* W */
 /* X */
 /* Y */
 /* Z */
-@media all and (max-width: 768px) {
+@media all and (max-width: 1159px) {
+  .facesvg {
+    width: 15rem;
+    margin-left: 1.2rem;
+  }
+
+  .logo {
+    width: 6rem;
+    margin: 3rem 0rem;
+  }
+  .lrglogo {
+    width: 5rem;
+    margin: 3rem 0rem;
+  }
+
+  .smllogo {
+    width: 7rem;
+    margin: 3rem 0rem;
+  }
+  .paddinglogo {
+    width: 7rem;
+    margin-top: 10rem;
+    margin: 3rem 0rem;
+  }
+  .node {
+    width: 7rem;
+    margin-top: 1rem;
+    margin: 3rem 0rem;
+  }
+}
+@media all and (max-width: 500px) {
   * {
     overflow-x: hidden;
   }
   li,
-  .navbar,
   a,
   .li-item,
   .list {
-    margin: 0rem 0.4rem;
+    margin: 0rem 0.19rem;
     padding: 0;
-    font-size: 2rem;
   }
   .name {
     display: flex;
@@ -352,10 +362,12 @@ video {
     align-items: center;
     margin-left: 1.6rem;
   }
-  /* .cv,
-  video {
-    width: 0.001rem;
-  } */
+  .navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
   .main,
   .homeSection .App,
   #intro .facediv {
@@ -363,17 +375,20 @@ video {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
   }
   .main {
     margin-top: 10em;
   }
   .techstack-outer {
     flex-direction: column;
-    bottom: -100vh;
-    right: 0;
   }
   .slide-container {
-    margin-bottom: 10rem;
+    width: 70vw;
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+    border-top: 3px solid var(--text-color);
+    border-bottom: 3px solid var(--text-color);
   }
   .facesvg {
     width: 15rem;
@@ -383,26 +398,32 @@ video {
     font-size: 1em;
     margin-left: 0rem;
   }
+
   .logo {
-    width: 7rem;
+    width: 3rem;
+    margin: 3rem 0rem;
   }
   .lrglogo {
-    width: 5rem;
-    /* margin: 0rem 10rem; */
+    width: 2rem;
+    margin: 3rem 0rem;
   }
 
   .smllogo {
-    width: 7rem;
-    /* margin: 0rem 10rem; */
+    width: 3rem;
+    margin: 3rem 0rem;
   }
   .paddinglogo {
     width: 5rem;
     margin-top: 10rem;
-    /* margin: 0rem 10rem; */
+    margin: 3rem 0rem;
   }
   .node {
-    width: 7rem;
+    width: 3rem;
     margin-top: 1rem;
+    margin: 3rem 0rem;
+  }
+  .list {
+    font-size: 3px;
   }
   @keyframes blinkCaret {
     from,
