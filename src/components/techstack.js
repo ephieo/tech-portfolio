@@ -21,7 +21,7 @@ export function TechStack(props) {
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    // speed: 1500,
+    centerMode: true,
     autoplaySpeed: 1300,
     cssEase: "linear",
   };
