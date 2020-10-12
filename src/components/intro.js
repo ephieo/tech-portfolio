@@ -5,8 +5,7 @@ export default function Intro() {
     <div id="intro">
       <p className="pintro">
         Hey I'm Ephie, I'm a Fullstack Developer currently completing the
-        Founders and Coders Bootcamp. I'm looking forward to the tech journey
-        ahead of me.
+        Founders and Coders Bootcamp. I like to learn and make pretty things.
       </p>
     </div>
   );
