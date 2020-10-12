@@ -267,48 +267,23 @@ li {
 /* R */
 /* S */
 /* T */
-.techcont {
-  width: 50vw;
+.techstack-outer {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#techcont {
+  width: 80vw;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: row;
   flex-wrap: wrap;
-  margin-top: 20rem;
-  /* border: white 3px solid; */
 }
 
-.techstack-outer {
-  width: 100%;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  flex-direction: row;
-}
-.slide-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 40vw;
-  height: 35vw;
-  overflow: hidden;
-  border-top: 3px solid var(--text-color);
-  border-bottom: 3px solid var(--text-color);
-  border-radius: 20px;
-}
-
-.slides {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-}
-
-.techinfoheader {
-  font-size: 5rem;
-  text-align: center;
-}
 /* U */
 /* V */
 /* W */
@@ -321,7 +296,7 @@ li {
     margin-left: 1.2rem;
   }
 
-  .logo {
+  /* .logo {
     width: 6rem;
     margin: 3rem 0rem;
   }
@@ -343,7 +318,7 @@ li {
     width: 7rem;
     margin-top: 1rem;
     margin: 3rem 0rem;
-  }
+  } */
 }
 @media all and (max-width: 500px) {
   * {
@@ -380,16 +355,7 @@ li {
   .main {
     margin-top: 10em;
   }
-  .techstack-outer {
-    flex-direction: column;
-  }
-  .slide-container {
-    width: 70vw;
-    margin-bottom: 3rem;
-    margin-top: 3rem;
-    border-top: 3px solid var(--text-color);
-    border-bottom: 3px solid var(--text-color);
-  }
+
   .facesvg {
     width: 15rem;
     margin: 5rem 0rem;
@@ -403,7 +369,7 @@ li {
     width: 3rem;
     margin: 3rem 0rem;
   }
-  .lrglogo {
+  /* .lrglogo {
     width: 2rem;
     margin: 3rem 0rem;
   }
@@ -421,7 +387,7 @@ li {
     width: 3rem;
     margin-top: 1rem;
     margin: 3rem 0rem;
-  }
+  } */
   .list {
     font-size: 3px;
   }
