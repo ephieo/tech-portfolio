@@ -2,7 +2,6 @@ import React from "react";
 import Intro from "../components/intro.js";
 import Face from "../components/images.js";
 import { TechStack, Img } from "../components/techstack.js";
-import TechStack2 from "../components/techCont2";
 import arrow from "./../images/arrow.svg";
 //ephie-portfolio/src/images/arrow.svg
 
@@ -20,8 +19,8 @@ export default function Home() {
         </a>
       </div>
       <div className="techstack-outer">
-        <TechStack class="techcont" />
-        <TechStack2 class="techcont" />
+        <TechStack id="techcont" />
+        {/* <TechStack2 class="techcont" /> */}
       </div>
     </section>
   );
